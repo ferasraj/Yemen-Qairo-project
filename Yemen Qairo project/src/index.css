@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import "tailwindcss";
+@theme {
+  --default-font-family: "Cairo", sans-serif;
+  --font-cairo: "Cairo", sans-serif;
+  --font-tajawal: "tajawal", sans-serif;
+  --font-IBM-Plex: "IBM Plex Sans Arabic", sans-serif;
+  --color-primary: #ffba00;
+}
+
+@layer {
+  .form {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-1 focus:ring-[#e0a800]  focus:border-transparent focus:outline-none;
+  }
+}
+
+.stat-box {
+  transition: all 0.5s ease-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Scrollbar عام */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* خلفية المسار */
+::-webkit-scrollbar-track {
+  background: #101828; /* gray-500 */
+}
+
+/* لون المؤشر */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ffba00, #e0a800);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.3s ease;
+}
+
+/* عند التمرير Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#e0a800, #ffba00);
+}
